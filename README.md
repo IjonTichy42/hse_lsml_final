@@ -22,3 +22,6 @@ Metrics:
 
 Best model is chosen by accuracy, for it is a multiclassification task which does not require any advanced metrics.
 
+Dataset:
+
+https://www.kaggle.com/lgmoneda/ge-soccer-clubs-news - club column was used as class.
