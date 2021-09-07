@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./api
+    ports:
+      - 8000:8000
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+
+  mlflow:
+    build: ./mlflow
+    ports:
+      - 5000:5000
+    command: sh run.sh
+
+  model:
+    build: ./model
+    command: python3 task_prelearned.py
+
+  webapp:
+    build: ./webapp
+    ports:
+      - 3000:3000
+    command: yarn start
+

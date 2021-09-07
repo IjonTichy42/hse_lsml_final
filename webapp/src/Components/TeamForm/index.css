@@ -1,0 +1,31 @@
+.team-form__textarea {
+    height: 200px;
+    width: 400px;
+    resize: none;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.team-form__button-wrapper {
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team-form__button {
+    width: 150px;
+    height: 25px;
+    background: darkgreen;
+    color: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+.team-form__result {
+    font-size: 20px;
+}
+
+.team-form__team-name {
+    text-transform: capitalize;
+    font-weight: bold;
+}
