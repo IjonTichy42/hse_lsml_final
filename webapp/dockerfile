@@ -1,5 +1,5 @@
 FROM node:12.19.0
 WORKDIR /
-RUN yarn install react-scripts
+RUN yarn add react-scripts
 EXPOSE 3000
 COPY . .
